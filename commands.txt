@@ -130,3 +130,4 @@ python --version
 Reload your shell
 
  exec /bin/bash
+https://github.com/RedHatTraining
