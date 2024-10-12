@@ -1,0 +1,11 @@
+head README.md
+
+
+Windows users must replace the preceding head command in PowerShell as follows:
+ C:\Users\user\DO400\DO400-apps> type README.md
+
+Unpack the compressed archive file, and then copy the oc binary to a directory of your choice. Ensure that this directory is in the PATH variable for your system. On macOS and Linux, copy the oc binary to /usr/local/bin:
+[user@host c~]$ sudo p oc /usr/local/bin/
+
+[user@host ~]$ sudo chmod +x /usr/local/bin/oc
+https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/
