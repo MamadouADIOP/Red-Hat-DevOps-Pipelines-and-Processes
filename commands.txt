@@ -1,1 +1,132 @@
 sudo alternatives --config python
+For MacOs
+error: refname refs/heads/main not found
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval ""
+
+fi
+"For MacOs
+
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval "$(pyenv init -)"
+
+fi"
+ python --version
+Install Python in Windows.
+Run the installer, select the Add Python 3.9 to PATH check box, click Install Now, and follow the installation setup prompts.
+
+Open up Windows PowerShell and verify Python version 3.9 or higher is installed
+test
+Install NodeJS
+sudo dnf module install nodejs:14 -y
+Download Node.js
+https://nodejs.org/en/download/package-manager/#centos-fedora-and-red-hat-enterprise-linux
+
+
+Verify Node.js version 14 or higher is installed. You might need to restart your shell session beforehand.
+node -v
+
+Install Node.js in Ubuntu.
+sudo su -c \
+
+"bash <(wget -qO- https://deb.nodesource.com/setup_14.x)"
+
+Use the apt-get command to install Node.js.
+
+sudo apt-get install -y nodejs
+node -v
+
+Install Node.js in macOS.
+
+Install via Homebrew.
+
+ brew install nodejs
+
+node -v
+
+Install Node.js on Windows 10.
+
+In a web browser, visit https://nodejs.org/en/download/ and download the Windows installer.
+
+
+
+Run the installer and follow the installation setup prompts.
+
+
+
+Close your currently opened Windows PowerShell terminal, open up a new one, and verify that Node.js version 14 or higher is installed.
+
+If Java 11 or later is not found in your system, then install OpenJDK 11 via dnf.
+ sudo dnf install java-11-openjdk-devel -y
+
+Run the java -version command to verify that the version available in your device is 11 or later.
+java -version
+
+
+Install the JDK in Ubuntu.
+
+sudo apt install openjdk-11-jdk -y
+
+Install the JDK in macOS.
+
+Install via Homebrew.
+
+brew install java11
+
+Create a symlink in /Library/Java/JavaVirtualMachines to help your system discover the installed version.
+
+ sudo ln -sfn 
+/usr/local/opt/openjdk@11/libexec/openjdk.jdk 
+/Library/Java/JavaVirtualMachines/openjdk-11.jdk
+Use the java_home command to check that your system detects the newly installed version.
+
+/usr/libexec/java_home -V
+
+If you had a previously installed version, then you must switch to the new version.
+
+
+
+Prepend the Java path to your PATH variable.
+
+echo 'export PATH="/usr/local/opt/openjdk@11/bin:/home/student/.local/bin:/home/student/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/apache-maven/bin:/opt/apache-maven/bin"' >> ~/.bashrc
+
+sudo alternatives --config python
+For MacOs
+error: refname refs/heads/main not found
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval ""
+
+fi
+"For MacOs
+
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval ""
+
+fi"
+Run the python binary with the --version option to verify that the version available in your device is 3.6.8.
+python --version
+
+
+Reload your shell
+
+ exec /bin/bash
