@@ -1,0 +1,28 @@
+sudo alternatives --config python
+For MacOs
+error: refname refs/heads/main not found
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval ""
+
+fi
+"For MacOs
+
+brew install pyenv
+ pyenv install 3.6.8
+pyenv global 3.6.8
+Add the following code to the end of your ~/.zshrc file to enable auto-completion. Create the file if it does not exist.
+if command -v pyenv 1>/dev/null 2>&1; then
+
+  eval "$(pyenv init -)"
+
+fi"
+ python --version
+Install Python in Windows.
+Run the installer, select the Add Python 3.9 to PATH check box, click Install Now, and follow the installation setup prompts.
+
+Open up Windows PowerShell and verify Python version 3.9 or higher is installed
